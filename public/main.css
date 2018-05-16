@@ -1,0 +1,14 @@
+
+#banner {
+  background-color:#0865AA;
+  color:white;
+  font-family: "Orient Express", sans-serif;
+  font-size: 40px;
+  letter-spacing: 3px;
+  padding: 5px 5px 5px 5px;
+  width: 130px;
+  height: 130px;
+}
+body {
+  background-image:url( "/Users/charlieholtz/Desktop/mikes/Chicken-Shawarma_1.jpg");
+}
