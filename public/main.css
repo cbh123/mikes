@@ -1,14 +1,30 @@
 
-#banner {
-  background-color:#0865AA;
-  color:white;
-  font-family: "Orient Express", sans-serif;
-  font-size: 40px;
-  letter-spacing: 3px;
-  padding: 5px 5px 5px 5px;
-  width: 130px;
-  height: 130px;
-}
 body {
-  background-image:url( "/Users/charlieholtz/Desktop/mikes/Chicken-Shawarma_1.jpg");
+    background-image:url("Chicken-Shawarma_1.jpg");
+}
+
+body h1, body p {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+
+#banner {
+    font-size: 12px;
+    background-color:#0865AA;
+    color:white;
+    padding: 5px 5px 5px 5px;
+    width: 150px;
+    height: 150px;
+}
+
+#banner h1 {
+    font-family: "Orient Express", sans-serif; 
+    font-size: 42px;
+    line-height: 60px;
+    letter-spacing: 4px;
+    float: center;
+    margin: 5px 15px 5px 15px;
+   
 }
