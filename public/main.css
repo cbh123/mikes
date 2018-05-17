@@ -24,11 +24,11 @@ body h1, body p {
 
 #center {
     position: relative;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", black;
     text-align: center;
     width: 75%; 
     letter-spacing: 1px;
-    margin: 15% auto auto auto;   
+    margin: 10% auto auto auto;   
 }
 
 #center h2 {
@@ -40,7 +40,28 @@ body h1, body p {
     font-size: 250%;
 }
 
+#center button {
+    position: relative;
+    border-radius: 40px;
+    margin: 40px;
+    font-size: 300%;
+    padding: 5px 25px 5px 25px;
+    border:none;
+    background: none;
+    color:white;
+}
 
+#center button:hover{
+    text-shadow: 3px 2px 10px #24282B;
+}
+
+#center #menu {
+    background-color: #0865AA;
+}
+
+#center #menu:hover{
+    box-shadow: 3px 2px 10px #24282B;
+}
 
 #banner {
     position: relative;
