@@ -22,7 +22,7 @@
 <body>
     
    
-    <img src="Chicken-Shawarma_1.jpg">
+    <img src="images/Chicken-Shawarma_1.jpg">
     
     <div id="banner" onclick="window.scrollTo(0,0);">
         <h1>Mike's<br>Calzones</h1>
@@ -33,8 +33,9 @@
         <p>- Go Local Prov</p>
         
         <div id="navBar">
-            <button onclick="$('#banner')[0].scrollIntoView();">Hours</button>
-            <button id="menu">Menu</button>
+<!--            <button onclick="$('#hours')[0].scrollIntoView({behavior:'smooth'});">Hours</button>-->
+            <button onclick="window.scroll({top:690,left:0,behavior:'smooth'});">Hours</button>
+            <button onclick="$('#menu')[0].scrollIntoView({behavior:'smooth'});" id="menuButton">Menu</button>
             <button>Reviews</button>
         </div>
   
@@ -43,29 +44,71 @@
     
     
     <div id="hours">
-        <div id="barrier">
-            <p>hi</p>
+        
+        <div id="barrier">  
         </div>
         
         <h2>Hours</h2>
-        <p> Monday:<br>
-            Tuesday:<br>
-            Wednesday:<br>
-            Thursday:<br>
-            Friday:<br>
-            Saturday:<br><br>
-            Sunday:
+        
+<!--     Add javascript for detecting day of week? -->
+        <p> Monday-Thursday: 11am-Midnight <br>
+            Friday-Saturday: 11am-2am<br>
+            Sunday: Closed
         </p>
     </div>
     
-  
+    <div id="menu">
+        
+        <div id="barrier2">  
+        </div>
+        
+
+        <h2> Menu</h2>
+        
+        <img src="images/starters.png" id="starters" style="display:none">
+    
+        <img src="images/calzones.png" id="calzones" style="display:block">
+     
+        <img src="images/wraps.png" id="wraps" style="display:none">
+        
+
+
+    </div>
+    
+    <button id="home" style="display:none" onclick="window.scroll({top:0,left:0,behavior:'smooth'});">Back To Top</button>
     
     <div id="underBar">
         
     </div>
         
+<script>
+  $(document).ready(function() {
+			// grab the initial top offset of the navigation 
+		   	var stickyNavTop = $('#barrier').offset().top;
+		   	
+		   	// our function that decides weather the navigation bar should have "fixed" css position or not.
+		   	var stickyNav = function(){
+			    var scrollTop = $(window).scrollTop(); // our current vertical position from the top
+			         
+			    // if we've scrolled more than the navigation, change its position to fixed to stick to top,
+			    // otherwise change it back to relative
+			    if (scrollTop > stickyNavTop) { 
+			        $('#home').show();
+                    
+			    } else {
+			        $('#home').hide();
+			    }
+			};
+
+			stickyNav();
+			// and run it again every time you scroll
+			$(window).scroll(function() {
+				stickyNav();
+			});
+		});  
     
-  
+    
+</script>
     
     
     

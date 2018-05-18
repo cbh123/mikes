@@ -51,7 +51,7 @@ body h1, body p {
 
 /*------------Body Dark Overlay-------------------*/
 body{
-    background: url("black.png");
+    background: url("images/black.png");
     background-size: cover;
     
 }
@@ -93,12 +93,34 @@ body{
     text-shadow: 3px 2px 10px #24282B;
 }
 
-#center #menu {
+#center #menuButton {
     background-color: #0865AA;
 }
 
 #center #menu:hover{
     box-shadow: 3px 2px 10px #24282B;
+}
+
+#home {
+    font-family: "Quicksand";
+    color: white;
+    background-color: #0865AA;
+    border: none;
+    position: fixed;
+    top: 0;
+    left: 42%;
+    z-index: 100000000000;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 40px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    box-shadow: 3px 2px 10px #24282B;
+}
+
+#home:hover{
+    background-color: #0a4a7a;
 }
 
 /*----------------Hours-------------------*/
@@ -107,31 +129,93 @@ body{
     background-color: #EFEFEF;
     color: #0865AA;
     position: relative;
+    padding-bottom: 75px;
+    height: 500px;
+    margin-top: 15%;
 }
 
-#hours h2 {
+#hours h2{
     font-size: 72px;
-    padding: 5px 50px 20px 20px;
+    padding: 5px 5px 30px 40px;
     font-family: "Quicksand";
-    font-weight: 700;
-    
+    font-weight: 700;  
 }
+
 
 #hours p {
     color: #0865AA;
-    padding-left: 200px;
-    font-weight: 500;
-}
-
-#hours {
-    margin-top: 15%;
+    padding-left: 20%;
+    padding-top: 5%;
+    margin-bottom: 5%;
+    font-size: 250%;
+    resize: none;
 }
 
 #barrier {
     background-color: #0865AA;
-    opacity: 0.8;
-    height: 30%;
+    opacity: 1;
+    height: 70px;
+    overflow: hidden;
+/*    position: -webkit-sticky;*/
 }
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+}
+
+
+
+/*----------------Menu-------------------*/
+#barrier2 {
+    background-color: #0865AA;
+    opacity: 0.8;
+    height: 20px;
+}
+
+#barrier3 {
+    background-color: #EFEFEF;
+    height: 30px;
+}
+
+#menu {
+    background-color: #0865AA;
+    color: #0865AA;
+    position: relative;
+    padding-bottom: 75px;
+    height: auto;
+
+}
+
+#menu h2{
+    font-size: 72px;
+    padding: 5px 5px 20px 40px;
+    font-family: "Quicksand";
+    font-weight: 700;  
+    color:white;
+}
+
+#calzones {
+    margin-top: 0px;
+    margin-left: 15px;
+    position: relative;
+    opacity: 1;  
+}
+
+#wraps, #starters {
+    margin-top: 0px;
+    margin-left: 0px;
+    position: relative;
+    opacity: 1; 
+    
+}
+
+
+
 
 
 /*----------------UnderBar-------------------*/
@@ -146,8 +230,8 @@ body{
     width: 100%;
     height: 5%
 }
-*/
 
+*/
 
 
 
