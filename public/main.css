@@ -152,9 +152,9 @@ body{
 }
 
 #barrier {
-    background-color: #0865AA;
+    background-color: #EFEFEF;
     opacity: 1;
-    height: 70px;
+    height: 15px;
     overflow: hidden;
 /*    position: -webkit-sticky;*/
 }
