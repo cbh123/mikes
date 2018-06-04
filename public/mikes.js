@@ -23,3 +23,73 @@ $(document).ready(function() {
             stickyNav();
         });
     });  
+
+
+/**
+show() functions reveal the specified menu options, whilst hiding everything
+else 
+**/
+function showStarters(){
+    $('#starters').show();
+    $('#calzones').hide();
+    $('#wraps').hide();
+    $('#salads').hide();
+    clicked("#startersButton");
+}
+
+function showCalzones(){
+    $('#starters').hide();
+    $('#calzones').show();
+    $('#wraps').hide();
+    $('#salads').hide();
+    clicked("#calzonesButton");
+}
+
+function showWraps(){
+    $('#starters').hide();
+    $('#calzones').hide();
+    $('#wraps').show();
+    $('#salads').hide();
+    clicked("#wrapsButton");
+}
+
+function showSalads(){
+    $('#starters').hide();
+    $('#calzones').hide();
+    $('#wraps').hide();
+    $('#salads').show();
+    clicked("#saladsButton");
+}
+
+/*
+clicked(item) takes in a jQuery value (item). item is the id of the 
+button to change color. The reason we have the options list is 
+to loop through every button that isn't clicked and turn them 
+to the "unclicked" (white background, blue font) state. 
+
+The clicked button is turned to the "clicked" state (blue background, 
+white font).
+*/
+function clicked(item){
+    const options = ["#startersButton","#calzonesButton","#wrapsButton","#saladsButton"];
+    
+    const blue = ("#004a81");
+    const white = ("white");
+    
+    // Loop through button id options
+    for (var i=0; i<options.length; i++) {
+        
+        /* if button option is equal to the button that is clicked,
+        we change background wo blue and font to white */
+        if (item.valueOf() == options[i].valueOf()) {
+            $(item).css("background-color",blue);
+            $(item).css("color",white);
+        } else {
+            $(options[i]).css("background-color",white);
+            $(options[i]).css("color",blue);
+        }
+    }
+    
+}
+
+

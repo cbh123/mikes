@@ -25,6 +25,7 @@
 <body>
     
    
+    <!--    Background image    -->
     <img src="images/Chicken-Shawarma_1.jpg">
     
     <div id="banner" onclick="window.scrollTo(0,0);">
@@ -46,18 +47,19 @@
     
     
     <div id="hours">
-        
         <div id="barrier">  
         </div>
         
         <h2>Hours</h2>
         
-<!--     Add javascript for detecting day of week? -->
+        <!--     Add javascript for detecting day of week? -->
         <p> Monday-Thursday: 11am-Midnight <br>
             Friday-Saturday: 11am-2am<br>
             Sunday: Closed
         </p>
     </div>
+    
+    
     
     <div id="menu">
         
@@ -67,20 +69,19 @@
 
         <h2> Menu</h2>
         
+        <!--    Menu buttons       -->
         <div id="menuBar">
-            <button>Starters</button>
-            <button>Calzones</button>
-            <button>Wraps</button>
-            <button>Sides</button>
+            <button onclick="showStarters()" id="startersButton">Starters</button>
+            <button onclick="showCalzones()" id="calzonesButton">Calzones</button>
+            <button onclick="showWraps()" id="wrapsButton">Wraps</button>
+            <button onclick="showSalads()" id="saladsButton">Salads</button>
         </div>
         
+        <!--  Menu images      -->
         <img src="images/starters.png" id="starters" style="display:none">
-    
         <img src="images/calzones.png" id="calzones" style="display:block">
-     
         <img src="images/wraps.png" id="wraps" style="display:none">
-        
-
+        <img src="images/salads2.png" id="salads" style="display:none">
 
     </div>
     
@@ -90,10 +91,7 @@
         
     </div>
         
-<script>
 
-    
-</script>
     
     
     

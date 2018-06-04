@@ -199,7 +199,7 @@ body{
     color:white;
 }
 
-#calzones {
+#calzones, #salads {
     margin-top: 0px;
     margin-left: 15px;
     position: relative;
@@ -214,8 +214,25 @@ body{
     
 }
 
+/*----------------MenuBar-------------------*/
 
+#menuBar {
+    margin-left: 30px;
+}
+#menuBar button {
+    border-radius: 40px;
+    font-size: 24px;
+    margin: 10px;
+    width: 120px;
+    height: 40px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    border:none;
+}
 
+#menuBar button:hover {
+    box-shadow: 3px 2px 10px #24282B;
+}
 
 
 /*----------------UnderBar-------------------*/
