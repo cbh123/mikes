@@ -152,8 +152,8 @@ body{
     background-color: #EFEFEF;
     color: #0865AA;
     position: relative;
-    padding-bottom: 75px;
-    height: 600px;
+    padding-bottom: 65px;
+    height: 1200px;
     margin-top: 15%;
 }
 
@@ -189,6 +189,14 @@ body{
   top: 0;
   z-index: 100;
   border-top: 0;
+}
+
+#map {
+    margin-top: 30px;
+    border: none;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    
 }
 
 
