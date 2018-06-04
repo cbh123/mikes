@@ -28,8 +28,11 @@
     <!--    Background image    -->
     <img src="images/Chicken-Shawarma_1.jpg">
     
+    <a id="call" href="tel:401-228-8455">Call</a>
+    
     <div id="banner" onclick="window.scrollTo(0,0);">
         <h1>Mike's<br>Calzones</h1>
+       
     </div>
 
     <div id="center">
@@ -37,10 +40,12 @@
         <p>- Go Local Prov</p>
         
         <div id="navBar">
-            <button onclick="$('#barrier2')[0].scrollIntoView({behavior:'smooth'});" >Hours</button>
+            <button onclick="$('#hours')[0].scrollIntoView({behavior:'smooth'});" >Hours</button>
             <button onclick="$('#menu')[0].scrollIntoView({behavior:'smooth'});" id="menuButton">Menu</button>
             <button>Reviews</button>
         </div>
+        
+       
   
     </div>  
     
@@ -55,10 +60,13 @@
         <!--     Add javascript for detecting day of week? -->
         <p> Monday-Thursday: 11am-Midnight <br>
             Friday-Saturday: 11am-2am<br>
-            Sunday: Closed
+            Sunday: Closed<br><br>
+            
+            <a href="https://www.google.com/maps/place/Mike's+Calzones+and+Deli/@41.8298182,-71.4031743,17z/data=!3m1!4b1!4m5!3m4!1s0x89e44523781b01e3:0x8b3e0a80f382c1dd!8m2!3d41.8298182!4d-71.400991">288 Thayer Street</a><br>
+            <a href="tel:401-228-8455">401-228-8455</a><br>
+           
         </p>
     </div>
-    
     
     
     <div id="menu">
@@ -82,17 +90,46 @@
         <img src="images/calzones.png" id="calzones" style="display:block">
         <img src="images/wraps.png" id="wraps" style="display:none">
         <img src="images/salads2.png" id="salads" style="display:none">
-
     </div>
     
+    <!--  Back to Top button     -->
     <button id="home" style="display:none" onclick="window.scroll({top:0,left:0,behavior:'smooth'});">Back To Top</button>
     
-    <div id="underBar">
+    <div id="reviews">
+            
+        <div id="barrier3">  
+        </div>
+        <h2>Reviews</h2>
+        
+        <p> 
+        <strong><a href=https://www.yelp.com/biz/mikes-calzones-and-deli-providence>yelp:</a></strong> 4.5/5<br>
+            
+        <strong><a href=https://www.facebook.com/mikescalzones>facebook:</a></strong> 4.9/5<br>
+            
+        <strong><a href=https://www.tripadvisor.com/Restaurant_Review-g60946-d3186601-Reviews-Mike_s_Calzones-Providence_Rhode_Island.html>tripadvisor:</a></strong> 4.5/6<br>
+            
+        <strong><a href="https://foursquare.com/v/mikes-calzones--deli/4f6a1731e4b0345ba53a1f86">foursquare:</a></strong> 8.6/10<br> <br>
+            
+       
+        </p>
+    
+        
+        <!-- Reviews, embedded through Yelp.       -->
+    
+        <span class="yelp-review" data-review-id="Cqw0F492Kk4nBp_C35zQiQ" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=kDGEwHw67088HBSmvuc__w" rel="nofollow noopener">Taylor D.</a>'s <a href="https://www.yelp.com/biz/mikes-calzones-and-deli-providence?hrid=Cqw0F492Kk4nBp_C35zQiQ" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/YA1V1bpw0PPjAmztikduNA" rel="nofollow noopener">Mike's Calzones & Deli</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script></span>
+        
+<!--
+        <span class="yelp-review" data-review-id="vOUAFS37VFa0h985Rx6RRA" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=kLjE0tWY2vzFPmKhzQfsfQ" rel="nofollow noopener">Virginia W.</a>'s <a href="https://www.yelp.com/biz/mikes-calzones-and-deli-providence?hrid=vOUAFS37VFa0h985Rx6RRA" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/YA1V1bpw0PPjAmztikduNA" rel="nofollow noopener">Mike's Calzones & Deli</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script></span>
+
+        <span class="yelp-review" data-review-id="lOXQ1PYXCt_YwWoqtuk5Eg" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=rJCNo4EwVjZ4t_p0ZmWIcQ" rel="nofollow noopener">Benjamin F.</a>'s <a href="https://www.yelp.com/biz/mikes-calzones-and-deli-providence?hrid=lOXQ1PYXCt_YwWoqtuk5Eg" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/YA1V1bpw0PPjAmztikduNA" rel="nofollow noopener">Mike's Calzones & Deli</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script></span>
+
+        <span class="yelp-review" data-review-id="B3sjoEvIW1RcyjZIdVD8Vg" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=5Ih7YcRrIk1T-Od7P5S9Fw" rel="nofollow noopener">Christopher D.</a>'s <a href="https://www.yelp.com/biz/mikes-calzones-and-deli-providence?hrid=B3sjoEvIW1RcyjZIdVD8Vg" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/YA1V1bpw0PPjAmztikduNA" rel="nofollow noopener">Mike's Calzones & Deli</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script></span>
+-->
+
         
     </div>
-        
 
-    
+
     
     
 </body>
